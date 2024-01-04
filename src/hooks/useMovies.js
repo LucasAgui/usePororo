@@ -20,18 +20,18 @@ export function useMovies(query) {
 						{ signal: controller.signal }
 					);
 
-					if (!res.ok)
-						throw new Error('Something went wrong with fetching movies');
+					if (!res.ok) throw new Error('Algo salió mal al buscar películas');
 
 					const data = await res.json();
-					if (data.Response === 'False') throw new Error('Movie not found');
+					if (data.Response === 'False')
+						throw new Error('No se encontraron peliculas');
 
 					setMovies(data.Search);
 					setError('');
 				} catch (err) {
 					if (error.name !== 'AbortError') {
 						console.log(err.message);
-						setError(err.message);
+						setError('No se encontraron peliculas');
 					}
 				} finally {
 					setIsLoading(false);
@@ -49,7 +49,7 @@ export function useMovies(query) {
 				controller.abort();
 			};
 		},
-		[query, error]
+		[query, error.name]
 	);
 
 	return { movies, isLoading, error };

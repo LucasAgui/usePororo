@@ -43,7 +43,9 @@ export default function StarRating({
 		lineHeight: '1',
 		margin: '0',
 		color: color,
-		fontSize: `${size / 1.5}px`
+		fontSize: `${size / 1.5}px`,
+		position: 'absolute',
+		bottom: '0'
 	};
 
 	return (
