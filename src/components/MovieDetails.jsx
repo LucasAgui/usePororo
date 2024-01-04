@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import StarRating from './StarRating';
 import { useKey } from '../hooks/useKey';
 import Loader from './Loader';
+import sprite from '../assets/svgs/sprite.svg';
 
 const KEY = '27da3b5e';
 
@@ -101,7 +102,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 			document.title = `Movie | ${title}`;
 
 			return function () {
-				document.title = 'usePopcorn';
+				document.title = 'usePochoclo';
 				// console.log(`Clean up effect for movie ${title}`);
 			};
 		},
@@ -116,7 +117,9 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 				<>
 					<header>
 						<button className="btn-back" onClick={onCloseMovie}>
-							&larr;
+							<svg className="icon">
+								<use href={sprite + '#arrow-back-outline'}></use>
+							</svg>
 						</button>
 						<img src={poster} alt={`Poster of ${movie} movie`} />
 						<div className="details-overview">

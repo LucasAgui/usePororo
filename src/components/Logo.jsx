@@ -2,7 +2,7 @@ function Logo() {
 	return (
 		<div className="logo">
 			<span role="img">🍿</span>
-			<h1>usePororo</h1>
+			<h1>usePochoclo</h1>
 		</div>
 	);
 }

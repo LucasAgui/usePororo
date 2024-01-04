@@ -1,8 +1,27 @@
-# React + Vite
+# usePororo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto esta generado con la versión [18.2.0](https://legacy.reactjs.org/versions/) de React
 
-Currently, two official plugins are available:
+Consiste en una aplicación simple en la que podemos buscar peliculas realizando llamadas a la [API externa de OMDb](https://www.omdbapi.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalar dependencias
+
+Abrir una nueva terminal en la carpeta del proyecto y correr el comando `npm i`.
+
+## Servidor de desarrollo
+
+Correr el comando `npm run dev`.
+
+## Build
+
+Correr el comando `npm run build`
+
+## Archivo de configuración de VITE
+
+Para configurar de manera simple ESLint la aplicación utiliza el siguiente plugin:
+
+```
+import eslint from 'vite-plugin-eslint';
+```
+
+Este mismo ya se encuentra incluido en las dependencias de desarrollo del package.json
