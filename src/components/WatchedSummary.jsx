@@ -1,4 +1,7 @@
-import sprite from '../assets/svgs/sprite.svg';
+import Monitoring from '../Icons/Monitoring';
+import Movie from '../Icons/Movie';
+import Star from '../Icons/Star';
+import Time from '../Icons/Time';
 
 const average = (arr) =>
 	arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -12,27 +15,19 @@ function WatchedSummary({ watched }) {
 			<h2>Peliculas vistas</h2>
 			<div>
 				<p>
-					<svg className="icon">
-						<use href={sprite + '#movie'}></use>
-					</svg>
+					<Movie />
 					<span>{watched.length} totales</span>
 				</p>
 				<p>
-					<svg className="icon">
-						<use href={sprite + '#monitoring'}></use>
-					</svg>
+					<Monitoring />
 					<span>{avgImdbRating.toFixed(2)}</span>
 				</p>
 				<p>
-					<svg className="icon">
-						<use href={sprite + '#star'}></use>
-					</svg>
+					<Star />
 					<span>{avgUserRating.toFixed(2)}</span>
 				</p>
 				<p>
-					<svg className="icon">
-						<use href={sprite + '#hourglass'}></use>
-					</svg>
+					<Time />
 					<span>{avgRuntime} min</span>
 				</p>
 			</div>

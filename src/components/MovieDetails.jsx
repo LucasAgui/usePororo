@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import StarRating from './StarRating';
 import { useKey } from '../hooks/useKey';
 import Loader from './Loader';
-import sprite from '../assets/svgs/sprite.svg';
+import ArrowBack from '../Icons/ArrowBack';
 
 const KEY = '27da3b5e';
 
@@ -117,9 +117,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 				<>
 					<header>
 						<button className="btn-back" onClick={onCloseMovie}>
-							<svg className="icon icon-b">
-								<use href={sprite + '#keyboard-backspace'}></use>
-							</svg>
+							<ArrowBack className="icon icon-b" />
 						</button>
 						<img src={poster} alt={`Poster of ${movie} movie`} />
 						<div className="details-overview">
