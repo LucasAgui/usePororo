@@ -85,6 +85,7 @@ body {
 	width: 3rem;
 	height: 3rem;
 	fill: #fff;
+	transition: all 0.2s;
 }
 
 .icon-b {
@@ -270,8 +271,7 @@ body {
 }
 
 .summary .icon {
-	color: #fa5252;
-	fill: #e03131;
+	fill: #7950f2;
 }
 .summary h2 {
 	text-transform: uppercase;

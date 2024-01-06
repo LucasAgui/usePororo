@@ -1,7 +1,0 @@
-- hourglass
-- star
-- monitoring
-- movie
-- minimize
-  -​ keyboard-backspace
-- close

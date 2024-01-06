@@ -15,19 +15,19 @@ function WatchedSummary({ watched }) {
 			<h2>Peliculas vistas</h2>
 			<div>
 				<p>
-					<Movie />
+					<Movie className={'icon'} />
 					<span>{watched.length} totales</span>
 				</p>
 				<p>
-					<Monitoring />
+					<Monitoring className={'icon'} />
 					<span>{avgImdbRating.toFixed(2)}</span>
 				</p>
 				<p>
-					<Star />
+					<Star className={'icon'} />
 					<span>{avgUserRating.toFixed(2)}</span>
 				</p>
 				<p>
-					<Time />
+					<Time className={'icon'} />
 					<span>{avgRuntime} min</span>
 				</p>
 			</div>
