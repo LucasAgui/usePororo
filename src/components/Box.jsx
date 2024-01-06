@@ -8,11 +8,11 @@ function Box({ children }) {
 			<button className="btn-toggle" onClick={() => setIsOpen((open) => !open)}>
 				{isOpen ? (
 					<svg className="icon">
-						<use href={sprite + '#remove-outline'}></use>
+						<use href={sprite + '#minimize'}></use>
 					</svg>
 				) : (
 					<svg className="icon">
-						<use href={sprite + '#close-outline'}></use>
+						<use href={sprite + '#close'}></use>
 					</svg>
 				)}
 			</button>

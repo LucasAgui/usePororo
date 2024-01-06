@@ -117,8 +117,8 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
 				<>
 					<header>
 						<button className="btn-back" onClick={onCloseMovie}>
-							<svg className="icon">
-								<use href={sprite + '#arrow-back-outline'}></use>
+							<svg className="icon icon-b">
+								<use href={sprite + '#keyboard-backspace'}></use>
 							</svg>
 						</button>
 						<img src={poster} alt={`Poster of ${movie} movie`} />

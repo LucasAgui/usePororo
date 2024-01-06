@@ -13,25 +13,25 @@ function WatchedSummary({ watched }) {
 			<div>
 				<p>
 					<svg className="icon">
-						<use href={sprite + '#film-outline'}></use>
+						<use href={sprite + '#movie'}></use>
 					</svg>
 					<span>{watched.length} totales</span>
 				</p>
 				<p>
 					<svg className="icon">
-						<use href={sprite + '#podium-outline'}></use>
+						<use href={sprite + '#monitoring'}></use>
 					</svg>
 					<span>{avgImdbRating.toFixed(2)}</span>
 				</p>
 				<p>
 					<svg className="icon">
-						<use href={sprite + '#star-outline'}></use>
+						<use href={sprite + '#star'}></use>
 					</svg>
 					<span>{avgUserRating.toFixed(2)}</span>
 				</p>
 				<p>
 					<svg className="icon">
-						<use href={sprite + '#hourglass-outline'}></use>
+						<use href={sprite + '#hourglass'}></use>
 					</svg>
 					<span>{avgRuntime} min</span>
 				</p>

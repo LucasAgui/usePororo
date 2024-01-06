@@ -1,7 +1,7 @@
-- remove-outline - -
-- close-outline - X
-- arrow-back-outline - <-
-- film-outline - 🎞️​
-- podium-outline - 📊​
-- star-outline - ⭐
-- hourglass-outline - ⏳​
+- hourglass
+- star
+- monitoring
+- movie
+- minimize
+  -​ keyboard-backspace
+- close
